@@ -1,0 +1,36 @@
+{
+  "name": "dsh-academic-skills",
+  "version": "0.1.1",
+  "description": "硕博科研学术技能包：文献卡片、格式转换、期刊润色、综述大纲",
+  "type": "module",
+  "exports": {
+    ".": "./index.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "cordis.patch.yml",
+    "skills/*.md",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "dsh": ">=0.2.0"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "academic",
+    "literature-review",
+    "skill"
+  ],
+  "license": "MIT"
+}
